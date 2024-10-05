@@ -51,5 +51,5 @@ func fetchExchangeRate(ctx context.Context) (*ExchangeRate, error) {
 
 func saveExchangeRate(value string) error {
 	content := fmt.Sprintf("Dollar: %s", value)
-	return os.WriteFile("rate.txt", []byte(content), 0o644)
+	return os.WriteFile("cotacao.txt", []byte(content), 0o644)
 }
